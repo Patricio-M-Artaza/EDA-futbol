@@ -24,6 +24,8 @@ Los CSV no se incluyen en el repo por su tamaño; hay que descargarlos y colocar
 - Se incluyen solo jugadores con **900 minutos o más** en la temporada, para evitar valores inflados por pocos minutos. Esto deja fuera a suplentes y a muchos juveniles.
 - **Valor de mercado ≠ precio pagado.** Es la estimación de Transfermarkt, no el dinero de un traspaso.
 - Los resultados muestran **asociaciones**, no causas.
+- Se analizan **3 temporadas** (2023/24, 2024/25 y 2025/26), no toda la historia disponible. La 2026/27 no se incluye porque el dataset de Transfermarkt no tiene datos posteriores a junio de 2026.
+- Un mismo jugador puede aparecer en más de una temporada, así que las observaciones no son del todo independientes.
 
 ## Estructura
 - `src/memoria.ipynb`: resumen del análisis
