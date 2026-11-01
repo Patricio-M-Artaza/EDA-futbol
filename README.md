@@ -26,8 +26,13 @@ Los CSV no se incluyen en el repo por su tamaño; hay que descargarlos y colocar
 - `src/data/`: datos (no incluidos)
 - `presentacion/`: presentación final
 
+## Alcance y limitaciones
+- **Rendimiento = goles + asistencias por 90 minutos (`ga_90`).** Mide solo la contribución ofensiva. Los jugadores de rol defensivo o de construcción (por ejemplo, mediocentros defensivos o porteros) quedan con valores bajos sin que eso implique peor rendimiento.
+- Se analizan solo **delanteros y mediocampistas** de las 5 grandes ligas. Defensas y porteros quedan fuera porque `ga_90` no refleja su trabajo.
+- Se incluyen solo jugadores con **900 minutos o más** en la temporada, para evitar valores inflados por pocos minutos. Esto deja fuera a suplentes y a muchos juveniles.
+- **Valor de mercado ≠ precio pagado.** Es la estimación de Transfermarkt, no el dinero de un traspaso.
+- Los resultados muestran **asociaciones**, no causas.
+
 ## Tecnologías
 Python, pandas, NumPy, matplotlib
 
-## Estado
-En desarrollo. Entrega: viernes 6 de noviembre de 2026.
