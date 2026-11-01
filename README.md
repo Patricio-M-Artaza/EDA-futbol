@@ -6,13 +6,12 @@ de Premier League, LaLiga, Serie A, Bundesliga y Ligue 1.
 Proyecto individual.
 
 ## Pregunta
-¿El mercado paga más por la edad o por el rendimiento? ¿Dónde hay jugadores
-sobrevalorados o infravalorados?
+¿El mercado paga más por la edad o por el rendimiento? ¿Y en que casos el valor se aleja de lo que el rendimiento sugiere?
 
 ## Hipótesis
 1. En menores de 23, el valor de mercado se asocia más con la edad que con el rendimiento.
 2. Pasados los 28, el valor cae aunque el rendimiento (goles + asistencias por 90 min) se mantenga.
-3. Existen jugadores con un valor muy distinto al que sugiere su rendimiento, dentro de su posición.
+3. El rendimiento ofensivo explica el valor de mercado de forma distinta según la posición y la liga, y hay jugadores cuyo valor se aleja mucho de lo que sugieren su edad y su rendimiento.
 
 ## Datos
 [Transfermarkt datasets](https://github.com/dcaribou/transfermarkt-datasets)
