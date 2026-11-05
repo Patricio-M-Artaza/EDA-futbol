@@ -19,18 +19,18 @@ Analisis exploratorio del valor de mercado de futbolistas de las cinco grandes l
 
 - **Fuente:** dataset de Transfermarkt publicado en Kaggle (tablas `players`, `player_valuations` y `appearances`). Enlace de descarga: "(https://github.com/dcaribou/transfermarkt-datasets)"
 - **Ligas:** Las cinco grandes ligas europeas: LaLiga(Espana), Premier League(Inglaterra), Bundesliga(Alemania), Ligue 1(Francia), Serie A(Italia).
-- **Rendimiento:** `ga_90` (goles más asistencias por 90 minutos), calculado solo con partidos de liga de LaLiga, Premier League, Serie A, Bundesliga y Ligue 1. No se cuentan Champions League ni copas.
-- **No se compara entre ligas.** Los jugadores de las cinco ligas se analizan juntos y se separan solo por posición.
-- **Posiciones:** Attack y Midfield.
+- **Rendimiento:** `ga_90` (goles mas asistencias por 90 minutos), calculado solo con partidos de liga de LaLiga, Premier League, Serie A, Bundesliga y Ligue 1. No se cuentan Champions League ni copas.
+- **No se compara entre ligas.** Los jugadores de las cinco ligas se analizan juntos y se separan solo por posicion.
+- **Posiciones:** Atacante(Attack) y Mediocampista(Midfield).
 - **Filtro:** al menos 900 minutos jugados en la temporada.
 - **Temporadas:** 2023/24, 2024/25 y 2025/26 (2.579 filas jugador-temporada).
 - **Rendimiento:** `ga_90`, goles mas asistencias por 90 minutos.
-- **Valor:** ultima valoración de mercado de cada jugador en la temporada.
+- **Valor:** ultima valoracion de mercado de cada jugador en la temporada.
 
 ## Estructura del repositorio
 
 ```
-├── presentacion/        Presentación e imagenes de los graficos (img/)
+├── presentacion/        Presentacion e imagenes de los graficos (img/)
 ├── src/
 │   ├── data/            CSV originales y dataset de 3 temporadas (no se suben a GitHub)
 │   ├── notebooks/       Notebook del analisis
@@ -51,7 +51,7 @@ Analisis exploratorio del valor de mercado de futbolistas de las cinco grandes l
 - **`ga_90` solo mide goles y asistencias.** Subestima el aporte de los mediocampistas (recuperar, distribuir), por eso hay mediocampistas defensivos con valor alto y `ga_90` cercano a cero.
 - **Sesgo de supervivencia en los veteranos.** Con el filtro de 900 minutos, los mayores de 28 que quedan suelen ser los que siguen rindiendo, asi que su rendimiento sale algo inflado.
 - **Un mismo jugador puede aparecer en varias temporadas.** Las 2.579 filas no son 2.579 jugadores distintos.
-- **No se analiza la liga.** El análisis de H3 se limita a la posición.
+- **No se analiza la liga.** El análisis de H3 se limita a la posicion.
 - Una fila queda sin tramo de edad por no tener fecha de nacimiento.
 
 ## Tecnologias
